@@ -5,6 +5,7 @@ import {InfoSection} from "./layout/mainSections/infoSection/InfoSection";
 import {PremiumQuality} from "./layout/mainSections/pemiumQuality/PremiumQuality";
 import {Restaurants} from "./layout/mainSections/restaurants/Restaurants";
 import {Dishes} from "./layout/mainSections/dishes/Dishes";
+import {PurchasesDashboard} from "./layout/mainSections/purchasesDashboard/PurchasesDashboard";
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
             <PremiumQuality/>
             <Restaurants/>
             <Dishes/>
-            <main/>
+            <PurchasesDashboard/>
             <footer/>
         </div>
     );
