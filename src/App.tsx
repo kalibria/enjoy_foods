@@ -4,6 +4,7 @@ import {MainSection} from "./layout/mainSections/mainSection/MainSection";
 import {InfoSection} from "./layout/mainSections/infoSection/InfoSection";
 import {PremiumQuality} from "./layout/mainSections/pemiumQuality/PremiumQuality";
 import {Restaurants} from "./layout/mainSections/restaurants/Restaurants";
+import {Dishes} from "./layout/mainSections/dishes/Dishes";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <InfoSection/>
             <PremiumQuality/>
             <Restaurants/>
+            <Dishes/>
             <main/>
             <footer/>
         </div>
