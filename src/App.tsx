@@ -6,6 +6,7 @@ import {PremiumQuality} from "./layout/mainSections/pemiumQuality/PremiumQuality
 import {Restaurants} from "./layout/mainSections/restaurants/Restaurants";
 import {Dishes} from "./layout/mainSections/dishes/Dishes";
 import {PurchasesDashboard} from "./layout/mainSections/purchasesDashboard/PurchasesDashboard";
+import {CustomerSay} from "./layout/mainSections/customerSay/CustomerSay";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Restaurants/>
             <Dishes/>
             <PurchasesDashboard/>
+            <CustomerSay/>
             <footer/>
         </div>
     );
