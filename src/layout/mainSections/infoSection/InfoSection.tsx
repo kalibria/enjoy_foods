@@ -12,7 +12,7 @@ export const InfoSection = () => {
     );
 };
 
-const StyledInfoSection = styled.div`
+const StyledInfoSection = styled.section`
     display: flex;
     justify-content: space-around;
     
