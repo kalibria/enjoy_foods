@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from "styled-components";
-import {Menu} from "./Menu";
+import {Menu} from "../../components/Menu";
+import {Logo} from "../../components/Logo";
+
 
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <div>logo</div>
+            <Logo/>
             <Menu/>
             <div>log in / sign up</div>
         </StyledHeader>

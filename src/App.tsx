@@ -8,6 +8,7 @@ import {Dishes} from "./layout/mainSections/dishes/Dishes";
 import {PurchasesDashboard} from "./layout/mainSections/purchasesDashboard/PurchasesDashboard";
 import {CustomerSay} from "./layout/mainSections/customerSay/CustomerSay";
 import {Discount} from "./layout/mainSections/discount/Discount";
+import {Footer} from "./layout/footer/Footer";
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
             <PurchasesDashboard/>
             <CustomerSay/>
             <Discount/>
-            <footer/>
+            <Footer/>
         </div>
     );
 }
