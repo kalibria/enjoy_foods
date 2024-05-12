@@ -1,28 +1,32 @@
 import React from 'react';
 import styled from "styled-components";
-import {Menu} from "../../components/Menu";
-import {Logo} from "../../components/Logo";
 import {Container} from "../../components/container/Container";
+import {Icon} from "../../components/icon/Icon";
+import {FlexWrapper} from "../../components/wrapper/FlexWrapper";
+import {Menu} from "../../components/menu/Menu";
+import {MENU_ITEMS} from "../../variables/variables";
 
 
+export const Header: React.FC = () => {
 
-export const Header = () => {
     return (
         <StyledHeader>
             <Container>
-                <Logo/>
-                <Menu/>
-                <div>log in / sign up</div>
+                <FlexWrapper justify={"space-between"}>
+                    <FlexWrapper align={"center"} gap={"103px"}>
+                        <Icon iconId={"logo"}/>
+                        <Menu menuItems={MENU_ITEMS}/>
+                    </FlexWrapper>
+                    <div>log in / sign up</div>
+                </FlexWrapper>
             </Container>
-
         </StyledHeader>
-    );
+    )
+        ;
 };
 
 const StyledHeader = styled.header`
     background-color: aquamarine;
-    height: 135px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    aquamarineheight: 115px;
+    padding: 48px 0 25px;
 `

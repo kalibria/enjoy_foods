@@ -1,13 +1,13 @@
 import React from 'react';
-import {Logo} from "../../components/Logo";
-import {Menu} from "../../components/Menu";
+import {Menu} from "../../components/menu/Menu";
 import styled from "styled-components";
+import {MENU_ITEMS} from "../../variables/variables";
 
 export const FooterWithMenu = () => {
     return (
         <StyledFooterWithMenu>
-            <Logo/>
-            <Menu/>
+            <div>logo</div>
+            <Menu menuItems={MENU_ITEMS}/>
         </StyledFooterWithMenu>
     );
 };
