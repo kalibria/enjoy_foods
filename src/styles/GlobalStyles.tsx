@@ -4,7 +4,7 @@ import {theme} from "./Theme";
 export const GlobalStyles = createGlobalStyle`
     body {
         font-family: Inter;
-        color: ${theme.colors.primaryFontColor};
+        color: ${theme.colors.primaryColor};
         font-weight: 500;
         font-size: 18px;
         line-height: 1.2;
@@ -25,7 +25,7 @@ export const GlobalStyles = createGlobalStyle`
     li, a {
         text-decoration: none;
         font-family: Inter;
-        color: ${theme.colors.primaryFontColor};
+        color: ${theme.colors.primaryColor};
         font-weight: 500;
         font-size: 18px;
         line-height: 1.2;
