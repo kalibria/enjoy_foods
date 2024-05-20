@@ -31,7 +31,14 @@ export const GlobalStyles = createGlobalStyle`
         line-height: 1.2;
     }
     
+    section {
+        margin: 100px 0 100px
+    }
     
+    h1, h2, h3, h4, h5 {
+        font-family: "Poppins", sans-serif;
+        color: ${theme.colors.primaryFontColor};
+    }
 
 
 `

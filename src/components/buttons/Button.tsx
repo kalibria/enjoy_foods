@@ -19,4 +19,9 @@ export const Button = styled.button<ButtonPropsStyle>`
     border-radius: 18px;
     font-weight: 700;
     font-size: 18px;
+    
+    :hover {
+        background-color:${theme.colors.accentColor};
+        color: ${theme.colors.secondaryColor};
+    }
 `
