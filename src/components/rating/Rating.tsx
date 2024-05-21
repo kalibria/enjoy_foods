@@ -8,7 +8,7 @@ export const Rating = () => {
     return (
         <StyledRating>
             <FlexWrapper align={"center"} gap={"5px"}>
-                    <Icon iconId={"greenStar"} width={"29px"} height={28} viewBox={"0 0 29 28"}/>
+                    <Icon iconId={"greenStar"} width={29} height={28} viewBox={"0 0 29 28"}/>
                     <span>Trustpilot</span>
                 <StarWrapper>
                     <Icon iconId={"goldStar"} viewBox={"0 0 15 15"}/>
