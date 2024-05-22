@@ -16,12 +16,12 @@ export const MainImgs = () => {
                 <IconWrapper>
                     <Icon iconId={'mainArrow'} width={100} height={98} viewBox={"0 0 100 98"}/>
                 </IconWrapper>
-                {/*<IconWrapper>*/}
-                {/*    <Icon iconId={'mainTopIllustration'} width={100} height={98} viewBox={"0 0 100 98"}/>*/}
-                {/*</IconWrapper>*/}
-                {/*<IconWrapper>*/}
-                {/*    <Icon iconId={'mainDownIllustration'} width={100} height={98} viewBox={"0 0 100 98"}/>*/}
-                {/*</IconWrapper>*/}
+                <IconWrapper>
+                    <Icon iconId={'mainTopIllustration'} width={100} height={98} viewBox={"0 0 100 98"}/>
+                </IconWrapper>
+                <IconWrapper>
+                    <Icon iconId={'mainDownIllustration'} width={100} height={98} viewBox={"0 0 100 98"}/>
+                </IconWrapper>
 
             </ImgWrapper>
 
@@ -68,13 +68,18 @@ const StyledMainImg = styled.div`
 const IconWrapper = styled.div`
     position: absolute;
     
-    &:first-child {
+    &:first-of-type {
         right: -66px;
         top: 68px;
     }
     
-    //&:nth-child(2) {
-    //    top:20px;
-    //    right: 20px;
-    //}
+    &:nth-of-type(2) {
+        top: -85px;
+        right: -184px;
+    }
+
+    &:nth-of-type(3) {
+        top: 480px;
+        right: 460px;
+    }
 `
