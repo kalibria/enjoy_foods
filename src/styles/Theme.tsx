@@ -7,9 +7,11 @@ export const theme = {
         additionalColor: 'rgba(32, 31, 31, 0.2)',
         primaryFontColor: 'rgba(32, 31, 31, 1)',
         accentFontColor: 'rgba(92, 78, 174, 1)',
-
-
-
-
+        secondaryFontColor: 'rgba(255, 255, 255, 1)',
+    },
+    fontFamily: {
+        primaryFontFamily: 'Inter',
+        accentFontFamily: 'Poppins',
+        additionalFontFamily: 'Public Sans',
     }
 }

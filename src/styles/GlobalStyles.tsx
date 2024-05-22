@@ -36,7 +36,7 @@ export const GlobalStyles = createGlobalStyle`
     }
     
     h1, h2, h3, h4, h5 {
-        font-family: "Poppins", sans-serif;
+        font-family: ${theme.fontFamily.accentFontFamily}, sans-serif;
         color: ${theme.colors.primaryFontColor};
     }
 

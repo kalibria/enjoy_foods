@@ -57,10 +57,67 @@ const ButtonsWrapper = styled.div`
     }}
 `
 
+const ImgWrapper = styled.div`
+    width: 430px;
+    height: 430px;
+    background-color: ${theme.colors.accentColor};
+    border-radius: 50%;
+    position: relative;
+    
+`
+
+const Img = styled.img`
+    position: absolute;
+
+    &:first-child {
+        right: 20px;
+        bottom: -28px;
+    }
+
+    &:nth-child(2) {
+        position: absolute;
+        bottom: -106px;
+        left: -120px;
+    }
+
+    &:nth-child(3) {
+        position: absolute;
+        right: -120px;
+        top: -65px;
+    }
+`
+
+const MainImg = styled.div`
+    padding: 20px 90px;
+`
+
+const IconWrapper = styled.div`
+    position: absolute;
+    
+    &:first-of-type {
+        right: -66px;
+        top: 68px;
+    }
+    
+    &:nth-of-type(2) {
+        top: -85px;
+        right: -184px;
+    }
+
+    &:nth-of-type(3) {
+        top: 480px;
+        right: 460px;
+    }
+`
+
 export const S = {
     MainSection,
     Title,
     Description,
     ButtonsWrapper,
-    TitleHighlighted
+    TitleHighlighted,
+    ImgWrapper,
+    Img,
+    MainImg,
+    IconWrapper
 }
