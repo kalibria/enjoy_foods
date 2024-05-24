@@ -15,12 +15,17 @@ export const PremiumQualityDescription = () => {
                 <li>These foods promote overall wellness by support healthy digestion and boosting immunity</li>
             </ul>
             <Button backgroundColor={theme.colors.accentColor} color={theme.colors.secondaryFontColor}>Download<Icon iconId={'arrow'} width={30} height={20} viewBox={"0 0 20 20"} /></Button>
+            <StyledIconWrapper>
+                <Icon iconId={'qualityArrow'} width={90} height={60} viewBox={"0 0 150 44"}/>
+            </StyledIconWrapper>
+
         </StyledPremiumQualityDescription>
     );
 };
 
 const StyledPremiumQualityDescription = styled.div`
     max-width: 398px;
+    position: relative;
     
     & ul {
         margin-top: 45px;
@@ -30,7 +35,7 @@ const StyledPremiumQualityDescription = styled.div`
     
     
     & ul > li {
-        ${font({family:'Inter', color: theme.colors.primaryColor, Fmax:14, Fmin:12})};
+        ${font({family:'Inter', color: theme.colors.primaryColor, Fmax:20, Fmin:12})};
         list-style-type: disc;
         
         &:first-child{
@@ -39,4 +44,10 @@ const StyledPremiumQualityDescription = styled.div`
     }
     
    
+`
+
+const StyledIconWrapper = styled.div`
+    position: absolute;
+    bottom: -44px;
+    right: 176px;
 `
