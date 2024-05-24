@@ -5,7 +5,7 @@ import {MainImgs} from "./MainImgs";
 import {Container} from "../../../components/container/Container";
 import {FlexWrapper} from "../../../components/wrapper/FlexWrapper";
 
-export const MainSection = () => {
+export const MainSection:React.FC = () => {
     return (
         <StyledMainSection>
             <Container>

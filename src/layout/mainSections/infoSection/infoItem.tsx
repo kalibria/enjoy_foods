@@ -6,7 +6,7 @@ type InfoItemProps = {
     description: string
 }
 
-export const InfoItem = ({title, description}: InfoItemProps) => {
+export const InfoItem:React.FC<InfoItemProps> = ({title, description}: InfoItemProps) => {
     return (
         <S.InfoItem>
             <p>{title}</p>

@@ -12,8 +12,8 @@ export const MainDescription = () => {
                 Over The <span>World</span> </S.Title>
             <S.Description>EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get paychecks up to two days early. Get a <span>$20 bonus.</span></S.Description>
             <S.ButtonsWrapper>
-                <Button paddings={"18px 30px"} color={theme.colors.accentColor}>Get Started</Button>
-                <Button paddings={"18px 30px"} color={theme.colors.accentColor}>Go Pro</Button>
+                <Button color={theme.colors.accentColor}>Get Started</Button>
+                <Button color={theme.colors.accentColor}>Go Pro</Button>
             </S.ButtonsWrapper>
             <Rating/>
         </S.MainSection>

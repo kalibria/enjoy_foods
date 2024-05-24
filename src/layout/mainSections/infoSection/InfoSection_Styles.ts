@@ -47,8 +47,33 @@ const InfoItem = styled.div`
         text-align: center;
     }
 `
+const IconsWrapper = styled.div`
+    position: absolute;
+    
+    &:first-of-type {
+        top: -3px;
+        left: 0;
+    }
+    
+    &:nth-of-type(2) {
+        top: 54px;
+        left: -55px;
+    } 
+    
+    &:nth-of-type(4) {
+        top: 0;
+        right: 40px;
+    }
+    
+    &:nth-of-type(5) {
+        top: 0;
+        right: 0;
+    }
+    
+`
 
 export const S = {
     InfoSection,
-    InfoItem
+    InfoItem,
+    IconsWrapper
 }

@@ -20,8 +20,8 @@ export const Header: React.FC = () => {
                             <Menu menuItems={MENU_ITEMS}/>
                         </FlexWrapper>
                         <S.ButtonsWrapper>
-                            <Button color={theme.colors.primaryColor} paddings={"18px 26px"} border={"none"}>Login</Button>
-                            <Button color={theme.colors.secondaryColor} paddings={"18px 26px"} backgroundColor={theme.colors.accentColor}>Sign up</Button>
+                            <Button color={theme.colors.primaryColor} border={"none"}>Login</Button>
+                            <Button color={theme.colors.secondaryColor} backgroundColor={theme.colors.accentColor}>Sign up</Button>
                         </S.ButtonsWrapper>
                     </FlexWrapper>
             </Container>
