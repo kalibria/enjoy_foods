@@ -1,15 +1,20 @@
 import {theme} from "../../../styles/Theme";
 import styled from "styled-components";
 
+
+
 const InfoSection = styled.section`
     display: flex;
     justify-content: space-around;
     max-width: 1440px;
     width: 100%;
-    min-height: 220px;
+    min-height: 156px;
     
     background-color: ${theme.colors.accentColor};
     color:${theme.colors.secondaryFontColor};
+    
+    position: relative;
+    
 `
 
 const InfoItem = styled.div`
@@ -17,29 +22,16 @@ const InfoItem = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 148px;
+    max-width: 215px;
     gap:7px;
+    padding: 0 46px;
+  
     
     &:nth-of-type(2) {
-        position: relative;
-    }
-    
-    &:nth-of-type(2)::before {
-        content: "";
-        width: 1px;
+        border-left: 1px solid rgba(197, 197, 197, 0.20);
+        border-right: 1px solid rgba(197, 197, 197, 0.20);
         height: 87px;
-        background-color: rgba(197, 197, 197, 0.20);
-        position: absolute;
-        left: -130px;
-    }
-
-    &:nth-of-type(2)::after {
-        content: "";
-        width: 1px;
-        height: 87px;
-        background-color: rgba(197, 197, 197, 0.20);
-        position: absolute;
-        right: -130px;
+        max-width: 223px;
     }
     
     & p:first-child{
