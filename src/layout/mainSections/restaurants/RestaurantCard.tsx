@@ -1,30 +1,80 @@
 import React from 'react';
 import styled from "styled-components";
+import img1 from '../../../assets/images/restaurantsImgs/Resturent Image.svg';
+import {font} from "../../../styles/Common";
+
+// type RestaurantCardProps = {
+//     img: string
+//     info: string
+//     name: string
+//     time: string
+//     rating: number
+// }
 
 export const RestaurantCard = () => {
     return (
         <StyledRestaurantCard>
-            <div>img</div>
-            <div>info</div>
-            <p>The Chicken King</p>
-            <div>
-                <div>time</div>
-                <div>star</div>
-            </div>
-            <button>save</button>
-
+            <ImgWrapper>
+                <StyledImage src={img1} alt={'dish photo'}/>
+            </ImgWrapper>
+            <CardContainer>
+                <StyledInfoIcon>Healthy</StyledInfoIcon>
+                <StyledTitle>The Chicken King</StyledTitle>
+                <RatingBlock>
+                    <div>24min</div>
+                    <div>star</div>
+                </RatingBlock>
+                <button>save</button>
+            </CardContainer>
         </StyledRestaurantCard>
     );
 };
 
 const StyledRestaurantCard = styled.div`
     width: 395px;
-    height: 297px;
+    height: 298px;
     border-radius: 30px;
-    background-color: darkgray;
-    
+    border: 1px solid darkgray;
+`
+
+const ImgWrapper = styled.div`
+    width: 100%;
+    height: 176px;
+`
+const StyledImage = styled.img`
+    border-radius: 30px 30px 0 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+`
+
+const StyledInfoIcon = styled.div`
+    width: 65px;
+    border-radius: 5px;
+    background-color: rgba(247, 237, 208, 1);
+    color: rgba(218, 163, 26, 1);
+    font-size: 12px;
+    text-align: center;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25px;
+`
+
+const CardContainer = styled.div`
+    padding: 10px 36px;
+    border: 1px solid red;
+    //width: 100%;
+    //box-sizing: border-box;
+`
+
+const StyledTitle = styled.h4`
+    ${font({weight: 600, Fmax:26, Fmin: 20})}
+`
+
+const RatingBlock = styled.div`
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    ${font({family: 'Manrope', weight: 400, Fmax: 19, Fmin: 15, color: 'rgba(142, 151, 166, 1)'})}
 `
