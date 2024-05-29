@@ -6,7 +6,6 @@ import styled from "styled-components";
 const InfoSection = styled.section`
     display: flex;
     justify-content: space-around;
-    max-width: 1440px;
     width: 100%;
     min-height: 156px;
     
