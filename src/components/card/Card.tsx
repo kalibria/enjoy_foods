@@ -4,6 +4,7 @@ import img1 from '../../assets/images/restaurantsImgs/Resturent Image.svg'
 import {font} from "../../styles/Common";
 import {Icon} from "../icon/Icon";
 import {theme} from "../../styles/Theme";
+import {SmallButton} from "../buttons/SmallButton";
 
 
 // type RestaurantCardProps = {
@@ -29,8 +30,7 @@ export const Card = () => {
                         <Icon iconId={'purpleStar'} width={20} height={19} viewBox={"0 0 16 16"}/>
                         <span> 4.8</span>
                     </div>
-
-                    <button>save</button>
+                    <SmallButton backgroundColor={'rgba(219, 217, 238, 1)'} borderRadius={'50px'} width={'29px'}><Icon iconId={'bookMark'}  width={11} height={15} viewBox={"0 0 15 20"}/></SmallButton>
                 </RatingBlock>
 
             </CardContainer>
