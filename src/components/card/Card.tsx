@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
-import img1 from '../../../assets/images/restaurantsImgs/Resturent Image.svg';
-import {font} from "../../../styles/Common";
+import img1 from '../../assets/images/restaurantsImgs/Resturent Image.svg'
+import {font} from "../../styles/Common";
+import {Icon} from "../icon/Icon";
+import {theme} from "../../styles/Theme";
+
 
 // type RestaurantCardProps = {
 //     img: string
@@ -11,7 +14,7 @@ import {font} from "../../../styles/Common";
 //     rating: number
 // }
 
-export const RestaurantCard = () => {
+export const Card = () => {
     return (
         <StyledRestaurantCard>
             <ImgWrapper>
@@ -21,10 +24,15 @@ export const RestaurantCard = () => {
                 <StyledInfoIcon>Healthy</StyledInfoIcon>
                 <StyledTitle>The Chicken King</StyledTitle>
                 <RatingBlock>
-                    <div>24min</div>
-                    <div>star</div>
+                    <div>
+                        <span>24min &bull; </span>
+                        <Icon iconId={'purpleStar'} width={20} height={19} viewBox={"0 0 16 16"}/>
+                        <span> 4.8</span>
+                    </div>
+
+                    <button>save</button>
                 </RatingBlock>
-                <button>save</button>
+
             </CardContainer>
         </StyledRestaurantCard>
     );
@@ -71,10 +79,12 @@ const CardContainer = styled.div`
 `
 
 const StyledTitle = styled.h4`
-    ${font({weight: 600, Fmax:26, Fmin: 20})}
+    ${font({weight: 600, Fmax: 26, Fmin: 20})}
 `
 
 const RatingBlock = styled.div`
     display: flex;
-    ${font({family: 'Manrope', weight: 400, Fmax: 19, Fmin: 15, color: 'rgba(142, 151, 166, 1)'})}
+    ${font({family: 'Manrope', weight: 400, Fmax: 19, Fmin: 15, color: 'rgba(142, 151, 166, 1)'})};
+    gap: 4px;
+    justify-content: space-between;
 `

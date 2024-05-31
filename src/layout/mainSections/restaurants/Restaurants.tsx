@@ -1,8 +1,8 @@
 import React from 'react';
-import {RestaurantCard} from "./RestaurantCard";
 import styled from "styled-components";
 import {Title} from "../../../components/title/Title";
 import {Container} from "../../../components/container/Container";
+import {Card} from "../../../components/card/Card";
 
 export const Restaurants = () => {
     return (
@@ -10,9 +10,9 @@ export const Restaurants = () => {
             <Container>
                 <Title text={'Our Top '} highlightedText={'Restaurants'}></Title>
                 <CardsWrapper>
-                    <RestaurantCard/>
-                    <RestaurantCard/>
-                    <RestaurantCard/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
                 </CardsWrapper>
                 <button>View All</button>
             </Container>
