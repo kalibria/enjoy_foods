@@ -7,6 +7,8 @@ type ButtonProps = {
     backgroundColor?: string,
     border?: string
     color: string
+    fontWeight?: number
+    fontSize?: string
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
 export const Button = ({
@@ -24,13 +26,18 @@ export const Button = ({
                          color={color}
                          backgroundColor={backgroundColor}
                          border={border}
-    >{children}</StyledButton>
+                         {...restProps}
+    >{title}
+        {children}
+    </StyledButton>
 };
 
 type ButtonPropsStyle = {
     backgroundColor?: string,
     color: string,
-    border?: string
+    border?: string,
+    fontSize?: string,
+    fontWeight?: number,
 }
 
 const StyledButton = styled.button<ButtonPropsStyle>`
@@ -39,6 +46,11 @@ const StyledButton = styled.button<ButtonPropsStyle>`
     border: ${props => props.border || 'none'};
     padding: 20px 26px;
     border-radius: 18px;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: ${props => props.fontWeight || 700};
+    font-size: ${props => props.fontSize || '18px'};
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px
 `
