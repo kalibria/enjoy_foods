@@ -1,34 +1,34 @@
 import React from 'react';
 import styled from "styled-components";
-import img1 from '../../assets/images/restaurantsImgs/Resturent Image.svg'
 import {font} from "../../styles/Common";
 import {Icon} from "../icon/Icon";
-import {theme} from "../../styles/Theme";
 import {SmallButton} from "../buttons/SmallButton";
 
 
-// type RestaurantCardProps = {
-//     img: string
-//     info: string
-//     name: string
-//     time: string
-//     rating: number
-// }
+type CardProps = {
+    img: string
+    bckInfoIcon: string
+    colorInfoIcon: string
+    info: string
+    title: string
+    time: string
+    rating: string
+}
 
-export const Card = () => {
+export const Card = ({img,bckInfoIcon, colorInfoIcon, info, title, time, rating }: CardProps) => {
     return (
         <StyledRestaurantCard>
             <ImgWrapper>
-                <StyledImage src={img1} alt={'dish photo'}/>
+                <StyledImage src={img} alt={'dish photo'}/>
             </ImgWrapper>
             <CardContainer>
-                <StyledInfoIcon>Healthy</StyledInfoIcon>
-                <StyledTitle>The Chicken King</StyledTitle>
+                <StyledInfoIcon backgroundColor={bckInfoIcon} color={colorInfoIcon}>{info}</StyledInfoIcon>
+                <StyledTitle>{title}</StyledTitle>
                 <RatingBlock>
                     <div>
-                        <span>24min &bull; </span>
+                        <span>{time} &bull; </span>
                         <Icon iconId={'purpleStar'} width={20} height={19} viewBox={"0 0 16 16"}/>
-                        <span> 4.8</span>
+                        <span> {rating}</span>
                     </div>
                     <SmallButton backgroundColor={'rgba(219, 217, 238, 1)'} borderRadius={'50px'} width={'29px'}><Icon iconId={'bookMark'}  width={11} height={15} viewBox={"0 0 15 20"}/></SmallButton>
                 </RatingBlock>
@@ -43,6 +43,7 @@ const StyledRestaurantCard = styled.div`
     height: 298px;
     border-radius: 30px;
     border: 1px solid darkgray;
+    box-shadow: 6px 72px 35px 0px rgba(229, 229, 229, 0.7);
 `
 
 const ImgWrapper = styled.div`
@@ -58,11 +59,16 @@ const StyledImage = styled.img`
 
 `
 
-const StyledInfoIcon = styled.div`
+type StyledInfoIcon = {
+    color: string
+    backgroundColor: string
+}
+
+const StyledInfoIcon = styled.div<StyledInfoIcon>`
     width: 65px;
     border-radius: 5px;
-    background-color: rgba(247, 237, 208, 1);
-    color: rgba(218, 163, 26, 1);
+    background-color: ${props => props.backgroundColor};
+    color: ${props => props.color};
     font-size: 12px;
     text-align: center;
 
@@ -73,9 +79,6 @@ const StyledInfoIcon = styled.div`
 
 const CardContainer = styled.div`
     padding: 10px 36px;
-    border: 1px solid red;
-    //width: 100%;
-    //box-sizing: border-box;
 `
 
 const StyledTitle = styled.h4`
