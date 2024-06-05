@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const Menu:React.FC<Props> = ({menuItems}: Props) => {
-    const listItems = menuItems.map(item => {return <li><a href={"#"}>{item}</a></li>})
+    const listItems = menuItems.map((item, index) => {return <li key={index}><a href={"#"}>{item}</a></li>})
     return (
         <StyledMenu>
            <MenuList>

@@ -51,6 +51,7 @@ const Description = styled.p`
 
 const ButtonsWrapper = styled.div`   
     margin: 53px 0 33px;
+    display: flex;
     
     button:first-of-type {{
         margin-right: 18px;
