@@ -1,29 +1,18 @@
 import React from 'react';
 import styled from "styled-components";
+import {Card} from "../../../components/card/Card";
+import img1 from '../../../assets/images/dishes/Food Image1.png';
+import {PriceSection} from "./PriceSection";
 
 export const CardDish = () => {
     return (
-        <StyledCardDish>
-            <button>like</button>
-            <div>img</div>
-            <div>info</div>
-            <p>Chicken Hell</p>
-            <div>
-                <div>time</div>
-                <div>star</div>
-            </div>
-            <div>price</div>
-            <button>add</button>
+        <StyledCardDish img={img1} bckInfoIcon={'rgba(247, 237, 208, 1)'} colorInfoIcon={'rgba(218, 163, 26, 1)'} info={'Healthy'} title={'Chicken Hell'} time={'24min'} rating={'4.8'}>
+            <PriceSection dollars={12} cent={99}/>
         </StyledCardDish>
+
     );
 };
 
-const StyledCardDish = styled.div`
-    width: 225px;
-    height: 390px;
-    background-color: aquamarine;
-    border-radius: 35px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+const StyledCardDish = styled(Card)`
+   padding: 26px 17px 30px 17px;
 `

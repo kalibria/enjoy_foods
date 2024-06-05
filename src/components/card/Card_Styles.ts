@@ -2,16 +2,18 @@ import styled from "styled-components";
 import {font} from "../../styles/Common";
 
 const RestaurantCard = styled.div`
-    width: 395px;
-    height: 298px;
+    max-width: 395px;
+    width: 100%;
+    min-height: 298px;
     border-radius: 30px;
     border: 1px solid darkgray;
     box-shadow: 6px 72px 35px 0px rgba(229, 229, 229, 0.7);
+    
 `
 
 const ImgWrapper = styled.div`
     width: 100%;
-    height: 176px;
+    min-height: 176px;
 `
 const Image = styled.img`
     border-radius: 30px 30px 0 0;
@@ -42,10 +44,13 @@ const InfoIcon = styled.div<StyledInfoIcon>`
 
 const CardContainer = styled.div`
     padding: 10px 36px;
+   
 `
 
 const Title = styled.h4`
-    ${font({weight: 600, Fmax: 26, Fmin: 20})}
+    ${font({weight: 600, Fmax: 26, Fmin: 20})};
+    margin-top: 10px;
+    margin-bottom: 15px;
 `
 
 const RatingBlock = styled.div`

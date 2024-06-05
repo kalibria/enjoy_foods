@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 import {S} from './Card_Styles';
 import {Icon} from "../icon/Icon";
 import {SmallButton} from "../buttons/SmallButton";
@@ -12,9 +12,10 @@ type CardProps = {
     title: string
     time: string
     rating: string
+    children?:ReactNode
 }
 
-export const Card = ({img,bckInfoIcon, colorInfoIcon, info, title, time, rating }: CardProps) => {
+export const Card = ({img,bckInfoIcon, colorInfoIcon, info, title, time, rating, children }: CardProps) => {
     return (
         <S.RestaurantCard>
             <S.ImgWrapper>
@@ -33,6 +34,7 @@ export const Card = ({img,bckInfoIcon, colorInfoIcon, info, title, time, rating 
                 </S.RatingBlock>
 
             </S.CardContainer>
+            {children}
         </S.RestaurantCard>
     );
 };

@@ -33,10 +33,6 @@ export const GlobalStyles = createGlobalStyle`
     
     section {
         margin: 100px 0 100px;
-        
-        :nth-child(3){
-            
-        }
     }
     
     h1, h2, h3, h4, h5 {
