@@ -15,7 +15,6 @@ export const Indicator = ({text}: IndicatorProps) => {
         color: textColor
     }
 
-
     return <StyledIndicator style={indicatorStyle}>{text}</StyledIndicator>
 }
 

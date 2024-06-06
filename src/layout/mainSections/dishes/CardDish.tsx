@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 import {Card} from "../../../components/card/Card";
-import img1 from '../../../assets/images/dishes/Food Image1.png';
 import {PriceSection} from "./PriceSection";
 
 export const CardDish = () => {

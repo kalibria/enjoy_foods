@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 const CardsWrapper = styled.div`
     width: 100%;
     display: flex;
@@ -7,6 +8,13 @@ const CardsWrapper = styled.div`
     margin: 86px 0;
 `
 
+const CardContainer = styled.div`
+    padding: 10px 36px;
+`
+
+
+
 export const S = {
-    CardsWrapper
+    CardsWrapper,
+    CardContainer,
 }
