@@ -6,7 +6,8 @@ import {PriceSection} from "./PriceSection";
 
 export const CardDish = () => {
     return (
-        <StyledCardDish img={img1} bckInfoIcon={'rgba(247, 237, 208, 1)'} colorInfoIcon={'rgba(218, 163, 26, 1)'} info={'Healthy'} title={'Chicken Hell'} time={'24min'} rating={'4.8'}>
+        <StyledCardDish>
+        {/*// <StyledCardDish img={img1} bckInfoIcon={'rgba(247, 237, 208, 1)'} colorInfoIcon={'rgba(218, 163, 26, 1)'} info={'Healthy'} title={'Chicken Hell'} time={'24min'} rating={'4.8'}>*/}
             <PriceSection dollars={12} cent={99}/>
         </StyledCardDish>
 
