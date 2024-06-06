@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 type SmallButtonProps = {
     children?: ReactNode;
-    backgroundColor: string;
-    borderRadius: string;
+    backgroundColor?: string;
+    borderRadius?: string;
     width?: string;
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
