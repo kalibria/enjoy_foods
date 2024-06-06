@@ -7,6 +7,7 @@ import {CardTitle} from "../../../components/card/CardTitle";
 import {CardRating} from "./CardRating";
 import {SmallButton} from "../../../components/buttons/SmallButton";
 
+
 type CardDishProps = {
     img: string
     indicatorText: 'Healthy' | 'Trending' | 'Supreme'
@@ -29,11 +30,15 @@ export const CardDish = ({img, indicatorText, title, time, rating, dollars, cent
                                   fill="#323142"/>
                         </svg>
                     </SmallButton>
-                    <img src={img} alt={'food platter'}/>
-                    <Indicator text={indicatorText}/>
-                    <CardTitle title={title}/>
-                    <CardRating time={time} rating={rating}/>
-                    <PriceSection dollars={dollars} cent={cent}/>
+                    <S.ImgWrapper>
+                        <img src={img} alt={'food platter'}/>
+                    </S.ImgWrapper>
+                    <S.InfoWrapper>
+                        <Indicator text={indicatorText}/>
+                        <CardTitle>{title}</CardTitle>
+                        <CardRating time={time} rating={rating}/>
+                        <PriceSection dollars={dollars} cent={cent}/>
+                    </S.InfoWrapper>
                 </S.CardWrapper>
             </Card>
         </S.CardDish>

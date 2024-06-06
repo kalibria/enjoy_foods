@@ -1,6 +1,7 @@
-import styled from "styled-components";
+import {S} from './Dishes_Styles'
 import {SmallButton} from "../../../components/buttons/SmallButton";
 import {FlexWrapper} from "../../../components/wrapper/FlexWrapper";
+
 
 
 
@@ -11,10 +12,10 @@ type PriceSectionProps = {
 
 export const PriceSection = ({dollars, cent}: PriceSectionProps) => {
     return (
-        <StyledPriceSection>
-            <FlexWrapper justify={'space-between'}>
-                <div>$ {dollars}. <span>{cent}</span></div>
-                <SmallButton backgroundColor={'rgba(50, 49, 66, 1)'} borderRadius={'9px'}>
+        <S.PriceSection>
+            <FlexWrapper justify={'space-between'} align={'baseline'}>
+                <div>${dollars}. <span>{cent}</span></div>
+                <SmallButton backgroundColor={'rgba(50, 49, 66, 1)'} borderRadius={'9px'} width={'44px'} height={'40px'}>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="path-1-inside-1_1_16678" fill="white">
                             <path
@@ -29,11 +30,7 @@ export const PriceSection = ({dollars, cent}: PriceSectionProps) => {
                     </svg>
                 </SmallButton>
             </FlexWrapper>
-
-        </StyledPriceSection>
+        </S.PriceSection>
     )
 }
 
-const StyledPriceSection = styled.div`
-    padding: 10px 36px;
-`
