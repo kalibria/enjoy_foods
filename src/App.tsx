@@ -1,19 +1,32 @@
 import './App.css';
-import styled from 'styled-components';
+import {Header} from "./layout/header/Header";
+import {MainSection} from "./layout/mainSections/mainSection/MainSection";
+import {InfoSection} from "./layout/mainSections/infoSection/InfoSection";
+import {PremiumQuality} from "./layout/mainSections/pemiumQuality/PremiumQuality";
+import {Restaurants} from "./layout/mainSections/restaurants/Restaurants";
+import {Dishes} from "./layout/mainSections/dishes/Dishes";
+import {PurchasesDashboard} from "./layout/mainSections/purchasesDashboard/PurchasesDashboard";
+import {CustomerSay} from "./layout/mainSections/customerSay/CustomerSay";
+import {Discount} from "./layout/mainSections/discount/Discount";
+import {Footer} from "./layout/footer/Footer";
 
 
 function App() {
     return (
         <div className="App">
-            <Title>Welcome to IT-INCUBATOR</Title>
+            <Header/>
+            <MainSection/>
+            <InfoSection/>
+            <PremiumQuality/>
+            <Restaurants/>
+            <Dishes/>
+            <PurchasesDashboard/>
+            <CustomerSay/>
+            <Discount/>
+            <Footer/>
         </div>
     );
 }
 
 export default App;
 
-const Title = styled.h1`
-    font-size: 1.5em;
-    text-align: center;
-    color: #e91e63;
-`;
