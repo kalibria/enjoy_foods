@@ -1,11 +1,15 @@
 import React from 'react';
 import {DishItem} from "./DishItem";
 import styled from "styled-components";
+import {Title} from "../../../components/title/Title";
+import {Card} from "../../../components/card/Card";
+import {SmallCard} from "../../../components/card/SmallCard";
 
 export const DashboardInfo = () => {
     return (
         <StyledDashboardInfo>
-            <h2>Control <span>Purchases</span> Via Dashboard</h2>
+            <Title text={'Control'} highlightedText={' Purchases'} text2={' Via Dashboard'} weight={700} sizeMax={50} sizeMin={30} textAlign={'left'}/>
+            <SmallCard/>
             <DishItem/>
             <DishItem/>
             <DishItem/>

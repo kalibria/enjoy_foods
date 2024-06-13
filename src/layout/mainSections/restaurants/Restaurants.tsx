@@ -15,7 +15,7 @@ export const Restaurants = () => {
     return (
         <>
             <Container>
-                <Title text={'Our Top '} highlightedText={'Restaurants'}></Title>
+                <Title text={'Our Top '} highlightedText={'Restaurants'} sizeMax={45} sizeMin={30}/>
                 <S.CardsWrapper>
                     <RestaurantsCard textIndicator={"Healthy"} img={img1} rating={4.8} time={24} title={'The Chicken King'}/>
                     <RestaurantsCard textIndicator={'Trending'} img={img1} rating={4.9} time={24} title={'The Burger King'}/>

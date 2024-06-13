@@ -9,25 +9,31 @@ type TitleProps = {
     text2?: string
     weight?: number
     textAlign?: "left" | "center" | "right"
+    sizeMin?: number
+    sizeMax?: number
 }
 
-export const Title:React.FC<TitleProps> = ({text, highlightedText, text2, weight, textAlign}: TitleProps) => {
+export const Title: React.FC<TitleProps> = ({text, highlightedText, text2, weight, textAlign, sizeMin, sizeMax}: TitleProps) => {
     return (
-        <StyledTitle weight={weight} textAlign={textAlign}>{text} <HighlightedText>{highlightedText} </HighlightedText>{text2}</StyledTitle>
+        <StyledTitle weight={weight} textAlign={textAlign} sizeMin={sizeMin} sizeMax={sizeMax}>{text}
+            <HighlightedText>{highlightedText} </HighlightedText>{text2}</StyledTitle>
     );
 };
 
 type TitleStyleProps = {
     weight?: number
     textAlign?: "left" | "center" | "right"
+    sizeMin?: number
+    sizeMax?: number
+
 }
 
 const StyledTitle = styled.h2<TitleStyleProps>`
     text-align: ${props => props.textAlign || 'center'};
-    ${font({ Fmin:30, Fmax:36})};
+    ${(props) => font({Fmin: props.sizeMin, Fmax: props.sizeMax})};
     font-weight: ${props => props.weight || 600};
 `
 
 const HighlightedText = styled.span`
-  color:${theme.colors.accentFontColor}
+    color: ${theme.colors.accentFontColor}
 `

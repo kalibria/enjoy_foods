@@ -15,7 +15,7 @@ export const Dishes = () => {
     return (
         <S.Dishes>
             <Container>
-                <Title text={'Our Top'} highlightedText={'Dishes'}/>
+                <Title text={'Our Top'} highlightedText={' Dishes'} sizeMax={45} sizeMin={30}/>
                 <S.CardsWrapper>
                     <CardDish title={'Chicken Hell'} time={24} img={img1} rating={4.8} cent={99} dollars={12} indicatorText={'Healthy'}/>
                     <CardDish title={'Swe Dish'} img={img2} rating={4.9} time={34} cent={99} dollars={19} indicatorText={"Trending"}/>
